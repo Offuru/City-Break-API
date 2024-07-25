@@ -27,7 +27,6 @@ class CityEvents(Resource):
         db.session.commit()
 
         response = jsonify(event.to_dict())
-        print(jsonify(event.to_dict()))
         response.status_code = 201
 
         return response
